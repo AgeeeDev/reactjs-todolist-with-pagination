@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(245, 250, 243);
+}
+
+.App {
+  padding: 10px;
+}
+
+/* PROJECT NAME STYLING */
+.projectName {
+  width: 100%;
+  max-width: 1000px;
+  padding: 10px;
+  text-align: center;
+  margin: 10px auto;
+  background-color: white;
+  color: black;
+  font-size: 1.8rem;
+  font-weight: bold;
+  border-radius: 5px;
+  box-shadow: 2px 2px 3px #ddd;
+}
+
+/* INPUTS AND BUTTONS STYLING */
+.inputWrapper {
+  width: 100%;
+  max-width: 1000px;
+  background-color: white;
+  margin: 20px auto;
+  border-radius: 5px;
+  box-shadow: 2px 2px 3px #ddd;
+}
+
+.inputContainer {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 90%;
+  font-size: 1rem;
+}
+
+input:focus {
+  border: 1px solid #ddd;
+}
+
+button {
+  background-color: yellow;
+  padding: 10px;
+  border: 1px solid yellow;
+  border-radius: 5px;
+  margin: 5px;
+  color: black;
+  font-size: 1rem;
+}
+
+button.cancel {
+  background-color: red;
+  color: white;
+  border: 1px solid red;
+}
+
+/* CONTENT STYLING */
+.content {
+  width: 100%;
+  max-width: 1000px;
+  background-color: white;
+  margin: 10px auto;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 2px 2px 3px #ddd;
+}
+
+.noTask {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.listItem {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #bbb;
+  background-color: #eee;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+.listItem p {
+  word-break: break-all;
+  font-size: 1.1rem;
+}
+
+.listItem .actionBtns {
+  display: flex;
+}
+
+/*PAGINATION*/
+.paginationContainer {
+  display: flex;
+  justify-content: center;
+  gap: 3px;
+  padding: 10px;
+  flex-wrap: wrap;
+}
+
+.paginationContainer li {
+  list-style: none;
+  padding: 10px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 300;
+  color: black;
+}
+
+.paginationContainer li:hover {
+  background-color: #ddd;
+}
+
+.paginationContainer li.activePagination {
+  background-color: yellow;
+}
+
+.activePagination:hover {
+  background-color: yellow;
+}
+
+.activePagination a {
+  color: black;
+}
